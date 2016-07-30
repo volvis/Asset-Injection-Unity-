@@ -4,8 +4,11 @@ public class InjectAssetAttribute : PropertyAttribute
 {
     public System.Type assetType;
 
-    public InjectAssetAttribute(System.Type type)
+    public string assetName;
+
+    public InjectAssetAttribute(System.Type type, string name = "")
     {
         assetType = type;
+        assetName = name;
     }
 }
